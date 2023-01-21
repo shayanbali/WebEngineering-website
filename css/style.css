@@ -9,12 +9,18 @@
 }
 
 
+body {
+    font-family: 'Poppins';
+}
+
+
 .header {
 
     height: 100%;
     position: relative;
-    background-image: url("../Front-img/header5.jpg");
-
+    /* background-image: url("../Front-img/header5.jpg"); */
+    background-image:  linear-gradient(to left, rgba(1, 240, 25, 0.271), rgba(97, 20, 78, 0.499), #004ab808),
+    url('../Front-img/header5.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     /* margin-top: -1em;
@@ -35,7 +41,7 @@
     position: relative;
     background: var(--primary-color);
     /* background-size: cover; */
-    background-image:  linear-gradient(to left, rgba(1, 240, 25, 0.345), rgba(97, 20, 78, 0.73), rgba(10,40,100,0.73)),
+    background-image:  linear-gradient(to left, rgba(1, 240, 25, 0.868), rgba(97, 20, 78, 0.73), #0049B8),
     url('../Front-img/lectures-main.jpg');
     /* linear-gradient(to left, rgba(1, 240, 25, 0.345), rgba(97, 20, 78, 0.73), rgba(10,40,100,0.73)), */
     display: -ms-inline-grid;
@@ -63,7 +69,9 @@
 }
 .lec1:hover {
     opacity: 95%;
-    size: 80%;
+    width: 24%;
+    margin: 0.8;
+    margin-top: 2%;
 }
 
 
@@ -96,12 +104,42 @@
 }
 
 
+
+
+.booksLabel {
+    text-align: center;
+    font-weight: 800;
+    font-size:50px;
+    background:  linear-gradient(to left, rgba(1, 240, 25, 0.345), rgba(97, 20, 78, 0.73), rgba(10,40,100,0.73))
+}
+
+
 .flip-card {
+    position: relative;
+    float: left;
+    width: calc(88%/3);
+    margin-left: 2.5%;
+    margin-top: 1em;
+    background-color: red;
+}
+
+.imgg {
+    position: relative;
+    
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 100%;
+}
+
+
+ /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+ .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 200px;
+    width: calc(90%/3);
+    height: 600px;
     border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin-bottom: 1em;
   }
   
   /* This container is needed to position the front and back side */
@@ -139,4 +177,4 @@
     background-color: dodgerblue;
     color: white;
     transform: rotateY(180deg);
-  }
+  } 
