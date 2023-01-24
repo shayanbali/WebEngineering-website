@@ -59,11 +59,35 @@ body {
 
 
     transition: 4s ea;
-    /* filter: sepia(100%) hue-rotate(190deg) saturate(500%); */
+    /* filter: sepia(100%) hue-rotate(190deg) saturate(500%); */    
+}
 
-    
-    
 
+
+.headerContent {
+  position: absolute;
+  color: white;
+  text-align: center;
+  right: 1.7em;
+  top: 5em;
+  font-size: 30px;
+}
+
+.headerContent button {
+  min-width: 22em;
+  min-height: 4em;
+  border-radius: 3em;
+  font-size: 18px;
+  font-weight: 800;
+  margin-top: 1em;
+  transition: background-color 0.5s ease-in-out;
+  border: 0;
+  background: aquamarine;
+}
+
+
+.headerContent button:hover {
+  background: -webkit-linear-gradient(rgb(9, 77, 193), rgba(13, 180, 4, 0.411), rgba(184, 26, 97, 0.444));
 }
 
 .menu-div {
@@ -95,6 +119,8 @@ body {
     
 }
 
+
+
 .navMenu {
   
   display: none;
@@ -113,6 +139,21 @@ body {
   animation: 1s ease-out 0s 1 slideInDown;
   display: block;
   width: 98%;
+  z-index: 1001;
+  
+}
+
+
+.navMenu li{
+  margin-bottom: 2em;
+  
+}
+
+
+
+
+#mobile-exit {
+  margin-top: 1.4em;
 }
 
 .lectures {
@@ -208,6 +249,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   min-width: 100%;
+  
 }
 
 
@@ -269,9 +311,19 @@ transform: rotateY(180deg);
   text-align: center;
   font-weight: 800;
   font-size:40px;
+  
   background: -webkit-linear-gradient(rgb(9, 77, 193), rgb(12, 180, 4));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: font-size 1s ease-in-out;
+
+}
+.booksLabel:hover {
+  
+  background: -webkit-linear-gradient(rgb(180, 4, 66), rgb(9, 77, 193));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 45px;
 }
 
 
