@@ -8,37 +8,34 @@
 
     </head>
     <body>
-        <div class="header">
+
+        <div class="header" id="headerId">
 
             <div class="menu">
-                <div class="menu-div">
+                <a class="menu-div" href="#menuId">
                     <img id="mobile-cta" class="mobile-menu" src="Front-img/menu.svg" alt="Open navigation">
 
-                </div>
+                </a>
                 <!-- <img id="mobile-cta" class="mobile-menu" src="Front-img/menu.svg" alt="Open navigation"> -->
 
-                <nav>
+                <nav id="menuId" class="navMenu">
 
                     <img id="mobile-exit" class="mobile-menu-exit" src="Front-img/exit.svg" alt="Close navigation">
 
                     <ul class="primary-nav">
-                        <li class="current"><a href="#">Home</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Pricing</a></li>
+                        <li class="current"><a href="#headerId">START</a></li>
+                        <li><a href="#lecturesId">COURSE lectures</a></li>
+                        <li><a href="#booksId">RELATED BOOKS</a></li>
                     </ul>
 
-                    <ul class="secondry-nav">
-                        <li><a href="#">contact</a></li>
-                        <li class="go-premium-cta"><a href="#">Go premium</a></li>
-                        
-                    </ul>
+                    
                 </nav>
             </div>
             
 
         </div>
 
-        <section class="lectures">
+        <section class="lectures" id="lecturesId">
             <div class="lec1">
                 <img src="/Front-img/css_icon.png" alt="css icon" class="css_icon">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quidem provident repellendus eligendi assumenda facilis. Facere, temporibus labore quidem nisi doloribus asperiores libero dolor aspernatur. Illo quod id deserunt pariatur.</p>
@@ -61,7 +58,7 @@
             </div>
 
         </section>
-        <section class="books">
+        <section class="books" id="booksId">
 
             <div class="booksLabeldiv">
                 <h1 class="booksLabel">MOST POPULAR BOOKS</h1>

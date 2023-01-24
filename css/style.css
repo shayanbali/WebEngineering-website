@@ -8,10 +8,15 @@
     --primary-color: #62B4F2;
 }
 
+html {
+  scroll-behavior: smooth;
+  
+}
+
 
 body {
     font-family: 'Poppins';
-   
+    
 
 }
 
@@ -24,6 +29,17 @@ body {
       transform: translateX(0);
     }
 }
+
+
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 
 
 .header {
@@ -52,14 +68,15 @@ body {
 
 .menu-div {
     position: fixed;
+    right: 1.2em;
+    top: 1.2em;
     float: right;
     background-color: white;
 
     min-width: 4em;
     min-height: 4em;
     border-radius: 3em;
-    margin-top: 0.5em;
-    margin-left: 0.5em;
+
     z-index: 1000;
     background-color: aquamarine;
     transition: background-color 0.5s ease-in-out;
@@ -78,6 +95,26 @@ body {
     
 }
 
+.navMenu {
+  
+  display: none;
+  position: fixed;
+  right: 1em;
+  top: 1em;
+  background-color: #62B4F2;
+  /* min-width: 98%; */
+  text-align: center;
+  /* transition:  1s ease-in-out; */
+  border-radius: 0.5em;
+  z-index: 999;
+}
+
+.navMenu:target {
+  animation: 1s ease-out 0s 1 slideInDown;
+  display: block;
+  width: 98%;
+}
+
 .lectures {
 
     height: 60%;
@@ -87,13 +124,15 @@ body {
     background-image:  linear-gradient(to left, rgba(1, 240, 25, 0.868), rgba(97, 20, 78, 0.73), #0049B8),
     url('../Front-img/lectures-main.jpg');
     /* linear-gradient(to left, rgba(1, 240, 25, 0.345), rgba(97, 20, 78, 0.73), rgba(10,40,100,0.73)), */
-    display: -ms-inline-grid;
+    /* display: -ms-inline-grid; */
     background-size:100%;
     font-weight: 1000;
     
     
+    
 
 }
+
 
 .lec1 {
 
