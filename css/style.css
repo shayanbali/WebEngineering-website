@@ -35,6 +35,15 @@ a {
     }
 }
 
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 
 @keyframes slideInDown {
   0% {
@@ -76,9 +85,11 @@ a {
   right: 1.7em;
   top: 5em;
   font-size: 30px;
+  animation: 1s ease-out 0s 1 slideInRight;
 }
 
 .headerContent button {
+  animation: 1s ease-out 0s 1 slideInRight;
   min-width: 22em;
   min-height: 4em;
   border-radius: 3em;
@@ -285,7 +296,7 @@ position: relative;
 width: 100%;
 height: 100%;
 text-align: center;
-transition: transform 0.8s;
+transition: transform 0.5s;
 transform-style: preserve-3d;
 }
 
@@ -328,12 +339,20 @@ border-radius: 1em;
   font-size: 15px;
   font-weight: 600;
   margin-top: 3em;
-  transition: font-size 0.5s ease-in-out;
+  transition: font-size 0.5s ease-in-out; 
+  border: 0;
   
+}
+
+.flip-card-back a {
   
+  color: black;
   
   
 }
+
+
+
 
 .flip-card-back button:hover {
   font-size: 17px;
