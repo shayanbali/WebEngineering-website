@@ -16,10 +16,15 @@ html {
 
 body {
     font-family: 'Poppins';
+    text-align: justify;
     
 
 }
 
+
+a {
+  text-decoration: none;
+}
 
 @keyframes slideInLeft {
     0% {
@@ -153,7 +158,7 @@ body {
 
 
 #mobile-exit {
-  margin-top: 1.4em;
+  margin-top: 1.3em;
 }
 
 .lectures {
@@ -191,6 +196,11 @@ body {
     transition: 0.4s ease-in-out;
     /* display: none; */
 
+}
+
+
+.lec1 p{
+  
 }
 .lec1:hover {
     opacity: 95%;
@@ -249,6 +259,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   min-width: 100%;
+  border-radius: 1em;
   
 }
 
@@ -262,6 +273,7 @@ height: 600px;
 border: 1px solid #dedcdc;
 perspective: 1000px; /* Remove this if you don't want the 3D effect */
 margin-bottom: 1em;
+border-radius: 1em;
 }
 
 /* This container is needed to position the front and back side */
@@ -292,6 +304,7 @@ backface-visibility: hidden;
 .flip-card-front {
 background-color:aliceblue;
 color: black;
+border-radius: 1em;
 }
 
 /* Style the back side */
@@ -299,7 +312,38 @@ color: black;
 background-color: dodgerblue;
 color: white;
 transform: rotateY(180deg);
+border-radius: 1em;
 } 
+
+
+.flip-card-back button {
+  min-width: 18em;
+  min-height: 5em;
+  border-radius: 3em;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 3em;
+  transition: font-size 0.5s ease-in-out;
+  
+  
+  
+  
+}
+
+.flip-card-back button:hover {
+  font-size: 17px;
+}
+
+
+
+
+.flip-card-front h1{
+  background: -webkit-linear-gradient(rgb(9, 77, 193), rgb(12, 180, 4));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 
 
@@ -330,3 +374,165 @@ transform: rotateY(180deg);
 .books {
   background-color: aliceblue;
 }
+
+
+.book-popUp-photo{
+  position: relative;
+  height: 40em;
+  float: left;
+}
+
+
+#jsDiv {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.514);
+  min-width: 80%;
+  min-height: 80%;
+  right: 10em;
+  top: 3em;
+}
+
+
+
+#jsDiv:target {
+  animation: 1s ease-out 0s 1 slideInDown;
+  position: fixed;
+  display: block;
+  z-index: 1001;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-width: 4px;
+  border-color: rgba(0, 0, 0, 0.383);
+  border-style: ridge;
+}
+
+
+
+#jsDiv p{
+  float: left;
+  margin-left: 1em;
+  max-width: 40em;
+
+}
+
+
+
+#goDiv {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.514);
+  min-width: 80%;
+  min-height: 80%;
+  right: 10em;
+  top: 3em;
+}
+
+
+
+#goDiv:target {
+  animation: 1s ease-out 0s 1 slideInDown;
+  position: fixed;
+  display: block;
+  z-index: 1001;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-width: 4px;
+  border-color: rgba(0, 0, 0, 0.383);
+  border-style: ridge;
+}
+
+
+#goDiv p{
+  float: left;
+  margin-left: 1em;
+  max-width: 40em;
+}
+
+
+
+
+
+
+
+#reactDiv {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.514);
+  min-width: 80%;
+  min-height: 80%;
+  right: 10em;
+  top: 3em;
+}
+
+#reactDiv:target {
+  animation: 1s ease-out 0s 1 slideInDown;
+  position: fixed;
+  display: block;
+  z-index: 1001;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-width: 4px;
+  border-color: rgba(0, 0, 0, 0.383);
+  border-style: ridge;
+}
+
+
+#reactDiv p{
+  float: left;
+  margin-left: 1em;
+  max-width: 40em;
+}
+
+
+
+
+.mobile-menu-exit {
+  margin-left: 1.4em;
+}
+
+
+
+
+.footer {
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  margin-top: 4em;
+}
+.footer1 {
+
+  position: relative;
+  float: left;
+  min-width: calc(100%/2);
+  height: 100%;
+  background-color: rgb(44, 44, 44);
+  color: white;
+
+}
+
+
+.footer1 a{
+  color: white;
+  margin-top: -44em;
+  margin-left: 1em;
+}
+
+
+.footer1 p{
+  margin-top: 4em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
