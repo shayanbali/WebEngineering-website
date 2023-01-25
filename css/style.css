@@ -200,7 +200,10 @@ a {
 
 
 .lec1 p{
-  
+  max-width: 20em;
+  margin-left: 1em;
+  text-align: center;
+
 }
 .lec1:hover {
     opacity: 95%;
